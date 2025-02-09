@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description" content="Directory of businesses in Timbuktu">
+    <meta name="author" content="Your Name">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/timbuktu-logo.jpg" />
+    <meta property="og:url" content="https://www.timbuktu-chamber.com" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/directory.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Timbuktu Chamber of Commerce</h1>
+    <nav>
+    <ul>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="home.html">Home</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <main>
+    <h2>Member Directory</h2>
+    <div id="member-list"></div>
+    </main>
+
+    <footer>
+    <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

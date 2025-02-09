@@ -1,0 +1,65 @@
+[
+    {
+    "name": "Timbuktu Tech Solutions",
+    "address": "123 Tech Lane, Timbuktu",
+    "phone": "(123) 456-7890",
+    "website": "https://timbuktutech.com",
+    "image": "company-1.jpg",
+    "membership_level": 3,
+    "other_info": "Offering innovative tech services to local businesses."
+    },
+    {
+    "name": "Timbuktu Coffee Co.",
+    "address": "456 Coffee Street, Timbuktu",
+    "phone": "(123) 987-6543",
+    "website": "https://timbuktucoffee.com",
+    "image": "company-2.jpg",
+    "membership_level": 2,
+    "other_info": "Local coffee shop with a passion for quality beans."
+    },
+    {
+    "name": "Timbuktu Design Studio",
+    "address": "789 Design Avenue, Timbuktu",
+    "phone": "(123) 555-1234",
+    "website": "https://timbuktudesign.com",
+    "image": "company-3.jpg",
+    "membership_level": 1,
+    "other_info": "Creative design studio specializing in branding and graphics."
+    },
+    {
+    "name": "Timbuktu Auto Repairs",
+    "address": "101 Auto Way, Timbuktu",
+    "phone": "(123) 222-5555",
+    "website": "https://timbuktuauto.com",
+    "image": "company-4.jpg",
+    "membership_level": 2,
+    "other_info": "Reliable auto repair services for all vehicle types."
+    },
+    {
+    "name": "Timbuktu Real Estate",
+    "address": "202 Real Estate Blvd, Timbuktu",
+    "phone": "(123) 444-1111",
+    "website": "https://timbukturealestate.com",
+    "image": "company-5.jpg",
+    "membership_level": 3,
+    "other_info": "Helping clients find their dream homes in Timbuktu."
+    },
+    {
+    "name": "Timbuktu Arts & Crafts",
+    "address": "303 Art Street, Timbuktu",
+    "phone": "(123) 888-9999",
+    "website": "https://timbuktuarts.com",
+    "image": "company-6.jpg",
+    "membership_level": 1,
+    "other_info": "Promoting local artists and their handmade creations."
+    },
+    {
+    "name": "Timbuktu Florists",
+    "address": "404 Blossom Road, Timbuktu",
+    "phone": "(123) 777-3333",
+    "website": "https://timbuktu-florists.com",
+    "image": "company-7.jpg",
+    "membership_level": 3,
+    "other_info": "Beautiful floral arrangements for all occasions."
+    }
+]
