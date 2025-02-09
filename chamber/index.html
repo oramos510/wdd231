@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timbuktu Chamber of Commerce - Home</title>
+  <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce, connecting local businesses and providing valuable resources.">
+  <meta name="author" content="Your Name">
+
+  <meta property="og:title" content="Timbuktu Chamber of Commerce - Home" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/timbuktu-logo.jpg" />
+  <meta property="og:url" content="https://www.timbuktu-chamber.com" />
+  
+  <link rel="stylesheet" href="css/styles2.css">
+  <script src="js/home.js" defer>
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Timbuktu Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <img src="images/hero.jpg" alt="Timbuktu Chamber of Commerce" />
+      <div class="hero-text">
+        <h2>Welcome to the Timbuktu Chamber of Commerce</h2>
+        <p>Join us and become a part of our vibrant business community!</p>
+        <a href="join.html" class="cta-button">Join Now</a>
+      </div>
+    </section>
+
+    <section id="current-events">
+      <h2>Current Events</h2>
+      <div id="events-list">
+        <p>Stay tuned for upcoming events in Timbuktu!</p>
+      </div>
+    </section>
+
+    <section id="weather">
+      <h2>Current Weather</h2>
+      <div id="weather-details">
+        <p>Loading weather data...</p>
+      </div>
+    </section>
+
+    <section id="company-spotlights">
+      <h2>Spotlight Members</h2>
+      <div id="spotlight-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce | Last Modified: <span id="last-modified"></span></p></footer>
+    <script>
+
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
