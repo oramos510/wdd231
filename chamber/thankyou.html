@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Joining</title>
+  <meta name="description" content="Thank you for joining the Timbuktu Chamber of Commerce! Your submission was received.">
+  <meta name="author" content="Your Name">
+  
+  <link rel="stylesheet" href="css/styles3.css">
+</head>
+
+<body>
+  <header>
+    <h1>Timbuktu Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="thank-you-message">
+      <h2>Thank You for Joining the Timbuktu Chamber of Commerce!</h2>
+      <p>Your membership application has been received. Here are the details you provided:</p>
+
+      <div id="user-details">
+        <p><strong>First Name:</strong> <span id="first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+        <p><strong>Organization Name:</strong> <span id="org-name"></span></p>
+        <p><strong>Membership Level:</strong> <span id="membership-level"></span></p>
+        <p><strong>Description:</strong> <span id="description"></span></p>
+        <p><strong>Form Submitted On:</strong> <span id="timestamp"></span></p>
+      </div>
+
+      <button onclick="window.location.href='join.html'">Back to Join Form</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce | Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

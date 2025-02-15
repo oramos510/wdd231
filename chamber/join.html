@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Chamber</title>
+  <meta name="description" content="Join the Timbuktu Chamber of Commerce to connect with local businesses and gain valuable resources.">
+  <meta name="author" content="Your Name">
+
+  <meta property="og:title" content="Join the Timbuktu Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/timbuktu-logo.jpg" />
+  <meta property="og:url" content="https://www.timbuktu-chamber.com/join.html" />
+  
+  <link rel="stylesheet" href="css/styles3.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Timbuktu Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <img src="images/hero.jpg" alt="Join the Timbuktu Chamber of Commerce" />
+      <div class="hero-text">
+        <h2>Become a Member Today</h2>
+        <p>Join our community of local businesses and benefit from exclusive resources and networking opportunities.</p>
+      </div>
+    </section>
+
+    <section id="join-form">
+      <h2>Fill out the form to join</h2>
+
+      <form action="thankyou.html" method="get" id="joinForm">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required title="First name" autocomplete="given-name" placeholder="John">
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required title="Last name" autocomplete="family-name" placeholder="Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="org-title">Organizational Title:</label>
+          <input type="text" id="org-title" name="org-title" required title="Organizational title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" placeholder="Manager">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required title="Email address" autocomplete="email" placeholder="example@mail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required title="Phone number" autocomplete="tel" placeholder="123-456-7890">
+        </div>
+
+        <div class="form-group">
+          <label for="org-name">Organization Name:</label>
+          <input type="text" id="org-name" name="org-name" required title="Organization name" autocomplete="organization" placeholder="XYZ Corp">
+        </div>
+
+        <div class="form-group">
+          <label for="membership-level">Membership Level:</label>
+          <select id="membership-level" name="membership-level">
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Business/Organization Description:</label>
+          <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+        </div>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="membership-cards">
+      <h2>Choose Your Membership</h2>
+      <div class="membership-cards">
+        <div class="card" id="np-card">
+          <h3>NP Membership</h3>
+          <button onclick="openModal('np-modal')">Learn More</button>
+        </div>
+        <div class="card" id="bronze-card">
+          <h3>Bronze Membership</h3>
+          <button onclick="openModal('bronze-modal')">Learn More</button>
+        </div>
+        <div class="card" id="silver-card">
+          <h3>Silver Membership</h3>
+          <button onclick="openModal('silver-modal')">Learn More</button>
+        </div>
+        <div class="card" id="gold-card">
+          <h3>Gold Membership</h3>
+          <button onclick="openModal('gold-modal')">Learn More</button>
+        </div>
+      </div>
+
+      <div id="np-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('np-modal')">&times;</span>
+          <h2>NP Membership Benefits</h2>
+          <p>No fee, access to basic resources, and networking opportunities.</p>
+        </div>
+      </div>
+
+      <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+          <h2>Bronze Membership Benefits</h2>
+          <p>Discounts for events, basic advertising on the website.</p>
+        </div>
+      </div>
+
+      <div id="silver-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+          <h2>Silver Membership Benefits</h2>
+          <p>Event discounts, featured spot on the homepage, priority support.</p>
+        </div>
+      </div>
+
+      <div id="gold-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+          <h2>Gold Membership Benefits</h2>
+          <p>Exclusive events, premium advertising, and a dedicated support representative.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce | Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+</body>
+
+</html>
