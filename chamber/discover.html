@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    <meta name="description" content="Join the Timbuktu Chamber of Commerce to connect with local businesses and gain valuable resources.">
+    <meta name="author" content="Your Name">
+
+    <meta property="og:title" content="Join the Timbuktu Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/timbuktu-logo.jpg" />
+    <meta property="og:url" content="https://www.timbuktu-chamber.com/join.html" />
+
+    <link rel="stylesheet" href="css/styles4.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <script src="js/script2.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Timbuktu Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="visit-message"></section>
+        <section id="cards-container">
+            <div class="card" style="grid-area: card1;">
+                <h2>Uber HQ</h2>
+                <figure>
+                    <img src="images/company-1.jpg" alt="Image of Uber HQ" />
+                </figure>
+                <address>Uber, Sunnyvale, USA</address>
+                <p>Technologies Development.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card" style="grid-area: card2;">
+                <h2>Uber HQ</h2>
+                <figure>
+                    <img src="images/company-2.jpg" alt="Image of Uber HQ" />
+                </figure>
+                <address>Uber, Sunnyvale, USA</address>
+                <p>Technologies Development.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card" style="grid-area: card 3px">
+                <h2>Uber HQ</h2>
+                <figure>
+                    <img src="images/company-3.jpg" alt="Image of Uber HQ" />
+                </figure>
+                <address>Uber, Sunnyvale, USA</address>
+                <p>Technologies Development.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card" style="grid-area: card 4px">
+                <h2>Uber HQ</h2>
+                <figure>
+                    <img src="images/company-4.jpg" alt="Image of Uber HQ" />
+                </figure>
+                <address>Uber, Sunnyvale, USA</address>
+                <p>Technologies Development.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card" style="grid-area: card 5px">
+                <h2>Uber HQ</h2>
+                <figure>
+                    <img src="images/company-5.jpg" alt="Image of Uber HQ" />
+                </figure>
+                <address>Uber, Sunnyvale, USA</address>
+                <p>Technologies Development.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card" style="grid-area: card 6px">
+                <h2>Uber HQ</h2>
+                <figure>
+                    <img src="images/company-6.jpg" alt="Image of Uber HQ" />
+                </figure>
+                <address>Uber, Sunnyvale, USA</address>
+                <p>Technologies Development.</p>
+                <button>Learn more</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+
+        const lastVisit = localStorage.getItem("lastVisit");
+        const currentVisit = new Date().getTime();
+        const message = document.getElementById("visit-message");
+
+        if (!lastVisit) {
+            message.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const daysSinceVisit = Math.floor((currentVisit - lastVisit) / (1000 * 60 * 60 * 24));
+            if (daysSinceVisit < 1) {
+                message.textContent = "Back so soon! Awesome!";
+            } else {
+                message.textContent = `You last visited ${daysSinceVisit} day${daysSinceVisit > 1 ? 's' : ''} ago.`;
+            }
+        }
+        localStorage.setItem("lastVisit", currentVisit);
+    </script>
+</body>
+
+</html>

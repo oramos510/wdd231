@@ -1,0 +1,50 @@
+[
+    {
+    "title": "Museum of Art",
+    "address": "123 Art St, City, Country",
+    "description": "A place to explore amazing works of art.",
+    "image": "images/company-1.jpg"
+    },
+    {
+    "title": "Historic Park",
+    "address": "456 Park Ave, City, Country",
+    "description": "Explore the rich history of our region.",
+    "image": "images/company-2.jpg"
+    },
+    {
+    "title": "Cultural Center",
+    "address": "789 Culture Rd, City, Country",
+    "description": "Experience the local culture through exhibits and events.",
+    "image": "images/company-3.jpg"
+    },
+    {
+    "title": "Science Museum",
+    "address": "101 Science Blvd, City, Country",
+    "description": "Interactive exhibits for science lovers of all ages.",
+    "image": "images/company-4.jpg"
+    },
+    {
+    "title": "Botanical Gardens",
+    "address": "202 Green St, City, Country",
+    "description": "A lush, green garden filled with exotic plants.",
+    "image": "images/item5.webp"
+    },
+    {
+    "title": "Historic District",
+    "address": "303 History Ln, City, Country",
+    "description": "Take a walking tour of the historic district.",
+    "image": "images/item6.webp"
+    },
+    {
+    "title": "Theater Arts",
+    "address": "404 Arts Rd, City, Country",
+    "description": "Enjoy live performances in the heart of the city.",
+    "image": "images/item7.webp"
+    },
+    {
+    "title": "Farmers Market",
+    "address": "505 Market St, City, Country",
+    "description": "Buy fresh local produce and handmade goods.",
+    "image": "images/item8.webp"
+    }
+]
